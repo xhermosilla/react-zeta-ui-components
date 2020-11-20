@@ -1,0 +1,43 @@
+/* Clear theme --------------------------------------------------------------------------------- */
+
+:root {
+
+}
+
+/* wb-toolbar component */
+.z-toolbar-button { color: var(--gray); }
+.z-toolbar button:hover { color: var(--light); }
+.z-toolbar button.selected { color: var(--light); }
+
+
+/* Components -------------------------------- */
+/* XSmall devices (phones, 767px and down)     */
+
+@media (max-width: 767px ) { 
+  .z-toolbar button.selected { border-bottom: 1px solid var(--light); }
+
+  /* wb-layout component */
+  .wb-layout { background-color: yellow; }
+}
+
+/* Components -------------------------------- */
+/* Small devices (tablets, 768px and up)       */
+
+@media (min-width: 768px ) { 
+  .z-toolbar button.selected { border-left: 1px solid var(--light); }
+  .wb-layout { background-color:blue; }
+}
+
+/* Components -------------------------------- */
+/* Medium devices (desktops, 992px and up)     */
+
+@media (min-width: 992px ) { 
+  .wb-layout { background-color:green; }
+}
+
+/* Components -------------------------------- */
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px ) { 
+  .wb-layout { background-color:rgb(231, 231, 231); }
+}

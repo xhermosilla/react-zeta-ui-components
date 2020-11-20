@@ -1,0 +1,55 @@
+html { height: 100%; width: 100%; box-sizing: border-box; }
+body { height: 100%; font-size: 13px !important; margin: 0; min-height: 100%; }
+
+/* Common -------------------------------------------------------------------------------------- */
+
+.cursor-pointer { cursor: pointer; }
+
+
+/* Components ---------------------------------------------------------------------------------- */
+
+/* z-toolbar component */
+.z-toolbar-button { padding: 5px 5px; text-align: center; box-shadow: none !important; border-radius: 0px; }
+.z-toolbar-button span { vertical-align: middle; font-size: 35px }
+
+/* wb-layout component */
+.wb-layout { padding-top: 57px; }
+
+
+/* Components -------------------------------- */
+/* XSmall devices (phones, 767px and down)     */
+
+@media (max-width: 767px ) { 
+  /* z-toolbar component */
+  .z-toolbar-button span { font-size: 35px }
+}
+
+/* Components -------------------------------- */
+/* Small devices (tablets, 768px and up)       */
+
+@media (min-width: 768px ) { 
+
+  /* wb-layout component */
+  .wb-layout { height: 100%; padding-top: 66px; }
+  .wb-layout-container { height: 100%; padding-left: 50px; }
+  .wb-layout-window { height: 100%; }
+
+  /* wb-toolbar component */
+  .left.z-toolbar { position: absolute; height: 100%; width: 50px; left: 0px; top: 0px; }
+  .z-toolbar-button { padding: 15px 5px; width: 100%; }
+  .z-toolbar-button span { font-size: 30px }
+}
+
+/* Components -------------------------------- */
+/* Medium devices (desktops, 992px and up)     */
+
+@media (min-width: 992px ) { 
+
+}
+
+/* Components -------------------------------- */
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px ) { 
+
+}
